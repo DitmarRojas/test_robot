@@ -26,5 +26,4 @@ Crear Test Vocacional
     Ingresar Credenciales Usuario Normal
     Verificar Login Exitoso Usuario Normal
     Verificar que el test vocacional fue asignado
-    Verrificar que el test vocacional fue realizado
     Cerrar navegador

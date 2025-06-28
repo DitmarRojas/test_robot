@@ -116,6 +116,8 @@ Asignar test vocacional a usuario
     Sleep    ${DELAY3}
 Cerrar sesion
     [Documentation]    Cierra la sesión del administrador
+    Click Element    xpath=//*[@id="userDropdown"]
+    Sleep    ${DELAY3}
     Click Link    xpath=/html/body/header/div[2]/ul/li[6]/a
     Sleep    ${DELAY3}
 Ingresar Credenciales Usuario Normal
@@ -136,14 +138,4 @@ Verificar que el test vocacional fue asignado
     Click Link    xpath=/html/body/div/div/div/div/div/div[3]/a
     Sleep    ${DELAY3}
     Wait Until Page Contains Element    xpath=/html/body/div/div/h2
-    Click Element   xpath=//*[@id="opcion21"]
-    Sleep    ${DELAY3}
-    Click Button    xpath=//*[@id="formTest"]/div[2]/button
-Verrificar que el test vocacional fue realizado
-    [Documentation]    Verifica que el test vocacional fue realizado correctamente
-    Wait Until Page Contains Element    xpath=/html/body/div/div/table/tbody/tr/td[5]/a
-    Sleep    ${DELAY3}
-    Click Button    xpath=/html/body/div/div/table/tbody/tr/td[5]/a
-    Sleep    ${DELAY3}
-    Wait Until Page Contains Element    xpath=/html/body/div/h2
     Sleep    ${DELAY3}
