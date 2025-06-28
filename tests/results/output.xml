@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-06-28T18:05:38.260086" rpa="false" schemaversion="5">
+<suite id="s1" name="testVocacional test" source="C:\Users\toodi\Documents\Progra_4\grupoTest\aplicaci-n-web\tests\test\testVocacional_test.robot">
+<test id="s1-t1" name="Crear Test Vocacional" line="9">
+<kw name="Abrir navegador" owner="testVocacional_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:05:38.952594" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/views/loginViews/loginUsuario.php'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-28T18:05:38.952196" elapsed="3.301957"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:05:45.255292" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:05:42.254526" elapsed="3.001042"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-06-28T18:05:45.255924" elapsed="0.055484"/>
+</kw>
+<status status="PASS" start="2025-06-28T18:05:38.950803" elapsed="6.360971"/>
+</kw>
+<kw name="Ingresar Credenciales Administrador" owner="testVocacional_keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>name=email</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-28T18:05:45.313841" elapsed="0.031150"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:05:45.345814" level="INFO">Typing text 'admin@test.com' into text field 'name=email'.</msg>
+<arg>name=email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:05:45.345336" elapsed="0.190027"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:05:48.536847" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:05:45.535846" elapsed="3.001175"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:05:48.537620" level="INFO">Typing text 'password' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:05:48.537271" elapsed="0.115340"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:05:51.653924" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:05:48.652972" elapsed="3.001120"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:05:51.654617" level="INFO">Clicking button 'xpath=/html/body/div/form/button'.</msg>
+<arg>xpath=/html/body/div/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:05:51.654332" elapsed="0.969454"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:05:55.625100" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:05:52.624057" elapsed="3.001448"/>
+</kw>
+<doc>Ingresa las credenciales del administrador para verificar el login exitoso</doc>
+<status status="PASS" start="2025-06-28T18:05:45.312895" elapsed="10.313013"/>
+</kw>
+<kw name="Verificar Login Exitoso Administrador" owner="testVocacional_keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div/main/div[1]/h1</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-28T18:05:55.627185" elapsed="0.015712"/>
+</kw>
+<status status="PASS" start="2025-06-28T18:05:55.626664" elapsed="0.016421"/>
+</kw>
+<kw name="Ir a la pagina de test vocacional" owner="testVocacional_keywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:05:55.644454" level="INFO">Clicking link 'xpath=/html/body/div[2]/div/div/ul/li[3]/a'.</msg>
+<arg>xpath=/html/body/div[2]/div/div/ul/li[3]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:05:55.644159" elapsed="0.479023"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:05:59.123970" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:05:56.123457" elapsed="3.000671"/>
+</kw>
+<doc>Navega a la página del test vocacional</doc>
+<status status="PASS" start="2025-06-28T18:05:55.643652" elapsed="3.480614"/>
+</kw>
+<kw name="Crear nuevo test vocacional" owner="testVocacional_keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:05:59.126264" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/main/div[1]/div/button'.</msg>
+<arg>xpath=/html/body/div[2]/div/main/div[1]/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:05:59.126002" elapsed="0.100821"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:02.227971" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:05:59.227081" elapsed="3.001049"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:02.228644" level="INFO">Typing text 'Test Vocacional Automatizado' into text field 'xpath=//*[@id="nombre"]'.</msg>
+<arg>xpath=//*[@id="nombre"]</arg>
+<arg>Test Vocacional Automatizado</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:02.228364" elapsed="0.160744"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:05.390825" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY1}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:02.389716" elapsed="3.001344"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:05.391892" level="INFO">Typing text 'Descripción del test vocacional automatizado' into text field 'xpath=//*[@id="descripcion"]'.</msg>
+<arg>xpath=//*[@id="descripcion"]</arg>
+<arg>Descripción del test vocacional automatizado</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:05.391428" elapsed="0.176557"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:08.569823" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY1}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:05.568292" elapsed="3.001821"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:08.571276" level="INFO">Typing text '30' into text field 'xpath=//*[@id="duracion_min"]'.</msg>
+<arg>xpath=//*[@id="duracion_min"]</arg>
+<arg>30</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:08.570639" elapsed="0.101414"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:11.672905" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY1}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:08.672338" elapsed="3.000806"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:11.673773" level="INFO">Clicking button 'xpath=//*[@id="formNuevoTest"]/div[2]/button[2]'.</msg>
+<arg>xpath=//*[@id="formNuevoTest"]/div[2]/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:11.673492" elapsed="0.120889"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:14.795305" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:11.794719" elapsed="3.000742"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:14.795974" level="INFO">Clicking button 'xpath=/html/body/div[6]/div/div[6]/button[1]'.</msg>
+<arg>xpath=/html/body/div[6]/div/div[6]/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:14.795701" elapsed="0.260561"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:18.057468" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:15.056723" elapsed="3.000903"/>
+</kw>
+<doc>Crea un nuevo test vocacional</doc>
+<status status="PASS" start="2025-06-28T18:05:59.125300" elapsed="18.932472"/>
+</kw>
+<kw name="Ir a asignar preguntas" owner="testVocacional_keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:18.059414" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/main/div[2]/div/div/div[3]/button[2]'.</msg>
+<arg>xpath=/html/body/div[2]/div/main/div[2]/div/div/div[3]/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:18.059166" elapsed="0.242657"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:21.303554" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:18.302264" elapsed="3.001744"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div/main/div[1]/button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-28T18:06:21.304490" elapsed="0.015113"/>
+</kw>
+<doc>Navega a la página de asignar preguntas al test vocacional</doc>
+<status status="PASS" start="2025-06-28T18:06:18.058666" elapsed="3.261094"/>
+</kw>
+<kw name="Asignar preguntas al test vocacional" owner="testVocacional_keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:24.321501" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY1}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:21.320679" elapsed="3.001066"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:24.322459" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/main/div[1]/button'.</msg>
+<arg>xpath=/html/body/div[2]/div/main/div[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:24.322085" elapsed="0.088783"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:27.411901" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:24.411187" elapsed="3.000880"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:27.412625" level="INFO">Typing text 'Pregunta de test vocacional automatizado' into text field 'xpath=//*[@id="texto"]'.</msg>
+<arg>xpath=//*[@id="texto"]</arg>
+<arg>Pregunta de test vocacional automatizado</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:27.412306" elapsed="0.165125"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:30.578653" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:27.577696" elapsed="3.001137"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:30.579573" level="INFO">Selecting options from selection list 'xpath=//*[@id="tipo"]' by value opcion_multiple.</msg>
+<arg>xpath=//*[@id="tipo"]</arg>
+<arg>opcion_multiple</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-06-28T18:06:30.579137" elapsed="0.072136"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:33.652374" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:30.651619" elapsed="3.000993"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:33.653333" level="INFO">Typing text 'Opción 1' into text field 'xpath=//*[@id="opciones-lista"]/div[1]/input'.</msg>
+<arg>xpath=//*[@id="opciones-lista"]/div[1]/input</arg>
+<arg>Opción 1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:33.652949" elapsed="0.113306"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:36.767741" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:33.766729" elapsed="3.001168"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:36.768441" level="INFO">Typing text 'Opción 2' into text field 'xpath=//*[@id="opciones-lista"]/div[2]/input'.</msg>
+<arg>xpath=//*[@id="opciones-lista"]/div[2]/input</arg>
+<arg>Opción 2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:36.768152" elapsed="0.120614"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:39.890111" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:36.889220" elapsed="3.001134"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:39.891189" level="INFO">Clicking button 'xpath=//*[@id="btnAgregarOpcion"]'.</msg>
+<arg>xpath=//*[@id="btnAgregarOpcion"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:39.890757" elapsed="0.118969"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:43.011103" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:40.010119" elapsed="3.001139"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:43.011768" level="INFO">Typing text 'Opción 3' into text field 'xpath=//*[@id="opciones-lista"]/div[3]/input'.</msg>
+<arg>xpath=//*[@id="opciones-lista"]/div[3]/input</arg>
+<arg>Opción 3</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:43.011489" elapsed="0.114797"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:46.127592" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:43.126682" elapsed="3.001062"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:46.128258" level="INFO">Clicking element 'xpath=//*[@id="opciones-lista"]/div[1]/div/input'.</msg>
+<arg>xpath=//*[@id="opciones-lista"]/div[1]/div/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:46.127981" elapsed="0.100065"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:49.229612" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:46.228394" elapsed="3.001748"/>
+</kw>
+<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:49.311793" level="INFO">Element 'xpath=//*[@id="opciones-lista"]/div[1]/div/input' attribute 'checked' contains value 'true'.</msg>
+<arg>xpath=//*[@id="opciones-lista"]/div[1]/div/input</arg>
+<arg>checked</arg>
+<arg>true</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<status status="PASS" start="2025-06-28T18:06:49.230384" elapsed="0.081546"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:52.313114" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:49.312167" elapsed="3.001186"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:52.314018" level="INFO">Clicking button 'xpath=//*[@id="formNuevaPregunta"]/div[2]/button[2]'.</msg>
+<arg>xpath=//*[@id="formNuevaPregunta"]/div[2]/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:52.313681" elapsed="0.101586"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:55.416861" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:52.415623" elapsed="3.001476"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:55.417690" level="INFO">Clicking button 'xpath=/html/body/div[6]/div/div[6]/button[1]'.</msg>
+<arg>xpath=/html/body/div[6]/div/div[6]/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:55.417422" elapsed="0.236426"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:06:58.655364" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:55.654181" elapsed="3.001444"/>
+</kw>
+<doc>Asigna preguntas al test vocacional</doc>
+<status status="PASS" start="2025-06-28T18:06:21.320341" elapsed="37.335541"/>
+</kw>
+<kw name="Ir a la pagina de test vocacional" owner="testVocacional_keywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:06:58.657934" level="INFO">Clicking link 'xpath=/html/body/div[2]/div/div/ul/li[3]/a'.</msg>
+<arg>xpath=/html/body/div[2]/div/div/ul/li[3]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:06:58.657686" elapsed="0.225458"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:07:01.884128" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:06:58.883454" elapsed="3.000828"/>
+</kw>
+<doc>Navega a la página del test vocacional</doc>
+<status status="PASS" start="2025-06-28T18:06:58.657034" elapsed="3.227389"/>
+</kw>
+<kw name="Editar test vocacional" owner="testVocacional_keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:01.885656" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/main/div[2]/div/div/div[3]/button[1]'.</msg>
+<arg>xpath=/html/body/div[2]/div/main/div[2]/div/div/div[3]/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:07:01.885375" elapsed="0.107188"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:07:04.993775" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:07:01.992830" elapsed="3.001140"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:04.994666" level="INFO">Typing text 'Test Vocacional Automatizado Editado' into text field 'xpath=//*[@id="edit_nombre"]'.</msg>
+<arg>xpath=//*[@id="edit_nombre"]</arg>
+<arg>Test Vocacional Automatizado Editado</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:07:04.994283" elapsed="0.194677"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:07:08.189967" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:07:05.189265" elapsed="3.000945"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:08.190900" level="INFO">Clicking button 'xpath=//*[@id="formEditarTest"]/div[2]/button[2]'.</msg>
+<arg>xpath=//*[@id="formEditarTest"]/div[2]/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:07:08.190537" elapsed="0.103549"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:07:11.296082" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:07:08.294571" elapsed="3.001752"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:11.297071" level="INFO">Clicking button 'xpath=/html/body/div[6]/div/div[6]/button[1]'.</msg>
+<arg>xpath=/html/body/div[6]/div/div[6]/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:07:11.296681" elapsed="0.224335"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:07:14.522000" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:07:11.521290" elapsed="3.001059"/>
+</kw>
+<doc>Edita el test vocacional creado recientemente</doc>
+<status status="PASS" start="2025-06-28T18:07:01.884904" elapsed="12.637719"/>
+</kw>
+<kw name="Verificar que el test vocacional fue editado" owner="testVocacional_keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="testsTable_filter"]/label/input</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-28T18:07:14.523907" elapsed="0.014648"/>
+</kw>
+<doc>Verifica que el test vocacional fue editado correctamente</doc>
+<status status="PASS" start="2025-06-28T18:07:14.523534" elapsed="0.015161"/>
+</kw>
+<kw name="Buscar Test Vocacional Automatizado Editado" owner="testVocacional_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:14.539552" level="INFO">Typing text 'Test Vocacional Automatizado Editado' into text field 'xpath=//*[@id="testsTable_filter"]/label/input'.</msg>
+<arg>xpath=//*[@id="testsTable_filter"]/label/input</arg>
+<arg>Test Vocacional Automatizado Editado</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:07:14.539345" elapsed="0.290322"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:07:17.830797" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:07:14.830027" elapsed="3.000914"/>
+</kw>
+<doc>Busca el test vocacional editado</doc>
+<status status="PASS" start="2025-06-28T18:07:14.539047" elapsed="3.292028"/>
+</kw>
+<kw name="Eliminar Test Vocacional Editado" owner="testVocacional_keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:17.832318" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/main/div[2]/div/div/div[3]/button[3]'.</msg>
+<arg>xpath=/html/body/div[2]/div/main/div[2]/div/div/div[3]/button[3]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:07:17.832063" elapsed="0.115426"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:07:20.949291" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:07:17.948229" elapsed="3.001282"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:20.950288" level="INFO">Clicking button 'xpath=/html/body/div[5]/div/div[6]/button[1]'.</msg>
+<arg>xpath=/html/body/div[5]/div/div[6]/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:07:20.949876" elapsed="0.169583"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:07:24.120356" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:07:21.119808" elapsed="3.000702"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:24.121025" level="INFO">Clicking button 'xpath=/html/body/div[5]/div/div[6]/button[1]'.</msg>
+<arg>xpath=/html/body/div[5]/div/div[6]/button[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:07:24.120751" elapsed="0.096719"/>
+</kw>
+<doc>Elimina el test vocacional editado</doc>
+<status status="PASS" start="2025-06-28T18:07:17.831629" elapsed="6.386179"/>
+</kw>
+<kw name="Ir a asignar test vocacional" owner="testVocacional_keywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:24.219465" level="INFO">Clicking link 'xpath=/html/body/div[2]/div/div/ul/li[5]/a'.</msg>
+<arg>xpath=/html/body/div[2]/div/div/ul/li[5]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:07:24.219103" elapsed="0.460651"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:07:27.681222" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:07:24.680190" elapsed="3.001197"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath=/html/body/div[2]/div/main/div/div/div/div/h2</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-28T18:07:27.681627" elapsed="0.015739"/>
+</kw>
+<doc>Navega a la página de asignar test vocacional</doc>
+<status status="PASS" start="2025-06-28T18:07:24.218593" elapsed="3.479063"/>
+</kw>
+<kw name="Asignar test vocacional a usuario" owner="testVocacional_keywords">
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:27.699410" level="INFO">Selecting options from selection list 'xpath=//*[@id="id_usuario"]' by index 1.</msg>
+<arg>xpath=//*[@id="id_usuario"]</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-06-28T18:07:27.698981" elapsed="0.111573"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:07:30.811372" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:07:27.810886" elapsed="3.000651"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:30.812065" level="INFO">Selecting options from selection list 'xpath=//*[@id="id_test"]' by index 1.</msg>
+<arg>xpath=//*[@id="id_test"]</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-06-28T18:07:30.811775" elapsed="0.093687"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:07:33.906675" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:07:30.905864" elapsed="3.001062"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:33.907661" level="INFO">Clicking button 'xpath=/html/body/div[2]/div/main/div/div/div/div/form/div[3]/button'.</msg>
+<arg>xpath=/html/body/div[2]/div/main/div/div/div/div/form/div[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-28T18:07:33.907275" elapsed="0.222578"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-06-28T18:07:37.131405" level="INFO">Slept 3 seconds.</msg>
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-06-28T18:07:34.130202" elapsed="3.001363"/>
+</kw>
+<doc>Asigna el test vocacional a un usuario</doc>
+<status status="PASS" start="2025-06-28T18:07:27.698315" elapsed="9.433395"/>
+</kw>
+<kw name="Cerrar sesion" owner="testVocacional_keywords">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-06-28T18:07:37.133776" level="INFO">Clicking link 'xpath=/html/body/header/div[2]/ul/li[6]/a'.</msg>
+<msg time="2025-06-28T18:07:37.314027" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-28T18:07:37.314371" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=137.0.7151.120)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7db72cda5+78885]
+	GetHandleVerifier [0x0x7ff7db72ce00+78976]
+	(No symbol) [0x0x7ff7db4e99fc]
+	(No symbol) [0x0x7ff7db541c64]
+	(No symbol) [0x0x7ff7db533654]
+	(No symbol) [0x0x7ff7db568b8a]
+	(No symbol) [0x0x7ff7db532f06]
+	(No symbol) [0x0x7ff7db568da0]
+	(No symbol) [0x0x7ff7db59122f]
+	(No symbol) [0x0x7ff7db568963]
+	(No symbol) [0x0x7ff7db5316b1]
+	(No symbol) [0x0x7ff7db532443]
+	GetHandleVerifier [0x0x7ff7dba04eed+3061101]
+	GetHandleVerifier [0x0x7ff7db9ff33d+3037629]
+	GetHandleVerifier [0x0x7ff7dba1e592+3165202]
+	GetHandleVerifier [0x0x7ff7db74730e+186766]
+	GetHandleVerifier [0x0x7ff7db74eb3f+217535]
+	GetHandleVerifier [0x0x7ff7db7359b4+114740]
+	GetHandleVerifier [0x0x7ff7db735b69+115177]
+	GetHandleVerifier [0x0x7ff7db71c368+10728]
+	BaseThreadInitThunk [0x0x7ffa4104e8d7+23]
+	RtlUserThreadStart [0x0x7ffa420fc34c+44]
+</msg>
+<arg>xpath=/html/body/header/div[2]/ul/li[6]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2025-06-28T18:07:37.133342" elapsed="0.287053">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=137.0.7151.120)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7db72cda5+78885]
+	GetHandleVerifier [0x0x7ff7db72ce00+78976]
+	(No symbol) [0x0x7ff7db4e99fc]
+	(No symbol) [0x0x7ff7db541c64]
+	(No symbol) [0x0x7ff7db533654]
+	(No symbol) [0x0x7ff7db568b8a]
+	(No symbol) [0x0x7ff7db532f06]
+	(No symbol) [0x0x7ff7db568da0]
+	(No symbol) [0x0x7ff7db59122f]
+	(No symbol) [0x0x7ff7db568963]
+	(No symbol) [0x0x7ff7db5316b1]
+	(No symbol) [0x0x7ff7db532443]
+	GetHandleVerifier [0x0x7ff7dba04eed+3061101]
+	GetHandleVerifier [0x0x7ff7db9ff33d+3037629]
+	GetHandleVerifier [0x0x7ff7dba1e592+3165202]
+	GetHandleVerifier [0x0x7ff7db74730e+186766]
+	GetHandleVerifier [0x0x7ff7db74eb3f+217535]
+	GetHandleVerifier [0x0x7ff7db7359b4+114740]
+	GetHandleVerifier [0x0x7ff7db735b69+115177]
+	GetHandleVerifier [0x0x7ff7db71c368+10728]
+	BaseThreadInitThunk [0x0x7ffa4104e8d7+23]
+	RtlUserThreadStart [0x0x7ffa420fc34c+44]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>${DELAY3}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-06-28T18:07:37.420717" elapsed="0.000064"/>
+</kw>
+<doc>Cierra la sesión del administrador</doc>
+<status status="FAIL" start="2025-06-28T18:07:37.132573" elapsed="0.288483">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=137.0.7151.120)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7db72cda5+78885]
+	GetHandleVerifier [0x0x7ff7db72ce00+78976]
+	(No symbol) [0x0x7ff7db4e99fc]
+	(No symbol) [0x0x7ff7db541c64]
+	(No symbol) [0x0x7ff7db533654]
+	(No symbol) [0x0x7ff7db568b8a]
+	(No symbol) [0x0x7ff7db532f06]
+	(No symbol) [0x0x7ff7db568da0]
+	(No symbol) [0x0x7ff7db59122f]
+	(No symbol) [0x0x7ff7db568963]
+	(No symbol) [0x0x7ff7db5316b1]
+	(No symbol) [0x0x7ff7db532443]
+	GetHandleVerifier [0x0x7ff7dba04eed+3061101]
+	GetHandleVerifier [0x0x7ff7db9ff33d+3037629]
+	GetHandleVerifier [0x0x7ff7dba1e592+3165202]
+	GetHandleVerifier [0x0x7ff7db74730e+186766]
+	GetHandleVerifier [0x0x7ff7db74eb3f+217535]
+	GetHandleVerifier [0x0x7ff7db7359b4+114740]
+	GetHandleVerifier [0x0x7ff7db735b69+115177]
+	GetHandleVerifier [0x0x7ff7db71c368+10728]
+	BaseThreadInitThunk [0x0x7ffa4104e8d7+23]
+	RtlUserThreadStart [0x0x7ffa420fc34c+44]
+</status>
+</kw>
+<kw name="Ingresar Credenciales Usuario Normal" owner="testVocacional_keywords">
+<doc>Ingresa las credenciales de un usuario normal para verificar la asignación del test vocacional</doc>
+<status status="NOT RUN" start="2025-06-28T18:07:37.421945" elapsed="0.000109"/>
+</kw>
+<kw name="Verificar Login Exitoso Usuario Normal" owner="testVocacional_keywords">
+<status status="NOT RUN" start="2025-06-28T18:07:37.422565" elapsed="0.000080"/>
+</kw>
+<kw name="Verificar que el test vocacional fue asignado" owner="testVocacional_keywords">
+<doc>Verifica que el test vocacional fue asignado correctamente en el usuario</doc>
+<status status="NOT RUN" start="2025-06-28T18:07:37.423481" elapsed="0.000077"/>
+</kw>
+<kw name="Verrificar que el test vocacional fue realizado" owner="testVocacional_keywords">
+<doc>Verifica que el test vocacional fue realizado correctamente</doc>
+<status status="NOT RUN" start="2025-06-28T18:07:37.423926" elapsed="0.000057"/>
+</kw>
+<kw name="Cerrar navegador" owner="testVocacional_keywords">
+<status status="NOT RUN" start="2025-06-28T18:07:37.424293" elapsed="0.000052"/>
+</kw>
+<doc>Verifica la creación de un test vocacional exitoso</doc>
+<status status="FAIL" start="2025-06-28T18:05:38.949236" elapsed="118.475456">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=137.0.7151.120)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7db72cda5+78885]
+	GetHandleVerifier [0x0x7ff7db72ce00+78976]
+	(No symbol) [0x0x7ff7db4e99fc]
+	(No symbol) [0x0x7ff7db541c64]
+	(No symbol) [0x0x7ff7db533654]
+	(No symbol) [0x0x7ff7db568b8a]
+	(No symbol) [0x0x7ff7db532f06]
+	(No symbol) [0x0x7ff7db568da0]
+	(No symbol) [0x0x7ff7db59122f]
+	(No symbol) [0x0x7ff7db568963]
+	(No symbol) [0x0x7ff7db5316b1]
+	(No symbol) [0x0x7ff7db532443]
+	GetHandleVerifier [0x0x7ff7dba04eed+3061101]
+	GetHandleVerifier [0x0x7ff7db9ff33d+3037629]
+	GetHandleVerifier [0x0x7ff7dba1e592+3165202]
+	GetHandleVerifier [0x0x7ff7db74730e+186766]
+	GetHandleVerifier [0x0x7ff7db74eb3f+217535]
+	GetHandleVerifier [0x0x7ff7db7359b4+114740]
+	GetHandleVerifier [0x0x7ff7db735b69+115177]
+	GetHandleVerifier [0x0x7ff7db71c368+10728]
+	BaseThreadInitThunk [0x0x7ffa4104e8d7+23]
+	RtlUserThreadStart [0x0x7ffa420fc34c+44]
+</status>
+</test>
+<doc>Test vocacional de Selenium automatizado con Robot Framework</doc>
+<status status="FAIL" start="2025-06-28T18:05:38.262151" elapsed="119.163928"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="testVocacional test" id="s1" pass="0" fail="1" skip="0">testVocacional test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

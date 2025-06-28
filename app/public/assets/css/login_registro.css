@@ -9,12 +9,12 @@ body {
 body {
   display: grid;
   place-content: center;
-  background-image: url("https://www.chevalerias.com/wp-content/uploads/2023/05/pourquoi-2-768x512.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
+  transition: background-image 0.5s;
 }
 
 /* Contenedor del login */

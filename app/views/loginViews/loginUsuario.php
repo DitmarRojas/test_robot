@@ -11,7 +11,31 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="../../public/assets/css/login.css">
+    <link rel="stylesheet" href="../../public/assets/css/login_registro.css">
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            transition: background-image 0.5s;
+        }
+    </style>
+    <script>
+        function setLoginBg() {
+            const horizontal = '../../public/assets/images/fondo_horizontal.png';
+            const vertical = '../../public/assets/images/fondo_vertical.png';
+            if (window.matchMedia('(orientation: landscape)').matches) {
+                document.body.style.backgroundImage = `url('${horizontal}')`;
+            } else {
+                document.body.style.backgroundImage = `url('${vertical}')`;
+            }
+        }
+        window.addEventListener('DOMContentLoaded', setLoginBg);
+        window.addEventListener('orientationchange', setLoginBg);
+        window.addEventListener('resize', setLoginBg);
+    </script>
 </head>
 
 <body>
